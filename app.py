@@ -9,7 +9,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 def chatgpt():
     data = request.json
     mensaje = data.get("mensaje", "")
-
+    
     if not mensaje:
         return jsonify({"error": "No se recibió mensaje"}), 400
 
