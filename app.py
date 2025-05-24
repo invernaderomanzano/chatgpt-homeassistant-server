@@ -26,3 +26,6 @@ def chatgpt():
 @app.route("/", methods=["GET"])
 def index():
     return "Servidor ChatGPT activo en Render"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)
